@@ -8,7 +8,7 @@ type UserInteractor struct {
 	UserRepository UserRepository
 }
 
-func (interactor *UserInteractor) Resistor(user model.User) (err error) {
+func (interactor *UserInteractor) Register(user model.User) (err error) {
 	err = interactor.UserRepository.Add(user)
 	return
 }
