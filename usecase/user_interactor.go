@@ -5,7 +5,7 @@ import (
 )
 
 type UserInteractor struct {
-	UserRepository UserRepository
+	UserRepository
 }
 
 func (interactor *UserInteractor) Register(user model.User) (err error) {

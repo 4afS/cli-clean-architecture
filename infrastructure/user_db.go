@@ -10,7 +10,7 @@ import (
 )
 
 type UserRepository struct {
-	DbHandler *DbHandler
+	*DbHandler
 }
 
 func NewUserRepository(dbHandler *DbHandler) usecase.UserRepository {

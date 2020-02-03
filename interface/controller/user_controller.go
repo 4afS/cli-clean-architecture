@@ -1,12 +1,12 @@
 package controller
 
 import (
-	"github.com/4afS/cli-clean-architecture/usecase"
 	"github.com/4afS/cli-clean-architecture/domain/model"
+	"github.com/4afS/cli-clean-architecture/usecase"
 )
 
 type UserController struct {
-	UserInteractor usecase.UserInteractor
+	usecase.UserInteractor
 }
 
 func NewUserController(repo usecase.UserRepository) *UserController {
